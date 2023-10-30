@@ -27,6 +27,6 @@ function toggleBurgerMenu() {
   } else {
     burgerMenu.style.display = "block";
     closeMenu.style.display = "none";
-    dropdownMenu.style.display = "flex";
+    dropDownMenu.style.display = "flex";
   }
 }
