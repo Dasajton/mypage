@@ -40,6 +40,7 @@ h1 {
 }
 h2 {
   text-align: center;
+  color: var(--sky-blue);
   font-size: 3rem;
   padding: 0 5rem;
 }
