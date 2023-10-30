@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - David Sajitz</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!------- Header Navigation ------->
+    <header>
+      <a href="./index.html"
+        ><img src="./assets/images/icons/code.svg" alt="logo"
+      /></a>
+      <nav class="navigation">
+        <ul>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/portfolio.html">Portfolio</a></li>
+          <li><a href="./pages/blog.html">Blog</a></li>
+          <li><a href="./pages/service.html">Service</a></li>
+        </ul>
+      </nav>
+      <button class="dropdown-btn" onClick="toggleBurgerMenu()">
+        <img
+          class="burgermenu"
+          src="./assets/images/icons/burger-menu.svg"
+          alt=""
+        />
+        <img class="closemenu" src="./assets/images/icons/close.svg" alt="" />
+      </button>
+    </header>
+
+    <!------- Dropdown-Menu ------->
+    <div class="dropdown-menu">
+      <a href="./pages/about.html">ABOUT</a>
+      <a href="./pages/portfolio.html">PORTFOLIO</a>
+      <a href="./pages/blog.html">BLOG</a>
+      <a href="./pages/service.html">SERVICE</a>
+    </div>
+
+    <!------- Index Hero Section ------->
+    <main>
+      <div class="intro-section">
+        <h1>DAVID SAJITZ</h1>
+        <h2>Web Developer</h2>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

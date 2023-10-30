@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--dark-slate);
+  color: var(--light-slate);
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* COLORS */
+  --dark-slate: #0f172a;
+  --gray-slate: #64748b;
+  --light-slate: #e2e8f0;
+  --sky-blue: #06b6d4;
+}
+
+/* --------- HEADER --------- */
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+
+  padding: 0 5rem;
+  font-size: 2rem;
+}
+.navigation {
+  display: none;
+}
+.navigation ul {
+  display: flex;
+  gap: 5rem;
+}
+.navigation a {
+  position: relative;
+  color: var(--sky-blue);
+}
+.navigation a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 4px;
+  background-color: var(--gray-slate);
+  transition: width 0.33s ease-in-out;
+}
+.navigation a:hover::before {
+  width: 100%;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: fixed;
+  top: 10vh;
+  right: -75%;
+  width: 75%;
+  height: 90vh;
+  padding: 4rem 1rem;
+  background-color: transparent;
+  z-index: 2;
+  overflow-y: auto;
+  transition: right 0.33s ease-in-out;
+}
+.dropdown-menu.active {
+  right: 0;
+}
+.dropdown-menu a {
+  font-size: 2rem;
+  text-align: center;
+  width: 50vw;
+  background-color: var(--sky-blue);
+  color: var(--light-slate);
+  padding: 3.5rem;
+  border-radius: 2rem;
+  transition: all 0.33s ease;
+}
+.dropdown-menu a:hover {
+  background-color: var(--dark-slate);
+  scale: 1.1;
+}
+
+/* --------- MAIN --------- */
+
+.intro-section {
+  text-align: center;
+  padding-top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/me-galaxy.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 6rem;
+  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 0;
+}
+h2 {
+  font-size: 4rem;
+  padding: 0 5rem;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 640px) {
+  header {
+    justify-content: end;
+  }
+  .navigation {
+    display: flex;
+  }
+  .dropdown-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .intro-section {
+    text-align: start;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+}
