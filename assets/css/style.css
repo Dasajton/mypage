@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* COLORS */
+  --dark-slate: #0f172a;
+  --gray-slate: #64748b;
+  --light-slate: #e2e8f0;
+  --sky-blue: #06b6d4;
+}
+
+/*--------- FONTS ---------*/
+
+h1 {
+  padding-top: 15vh;
+  text-align: center;
+  font-size: 5rem;
+}
+h2 {
+  text-align: center;
+  color: var(--sky-blue);
+  font-size: 3rem;
+  padding: 0 5rem;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+  display: none;
+}
+
+/* --------- HEADER --------- */
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+
+  border: 1px solid var(--sky-blue);
+  padding: 5rem;
+  font-size: 2.2rem;
+  z-index: 90;
+}
+.logo {
+  z-index: 10;
+}
+.navigation {
+  display: none;
+}
+.navigation ul {
+  display: flex;
+  gap: 5rem;
+}
+.navigation a {
+  position: relative;
+  color: var(--sky-blue);
+}
+.navigation a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.33s ease-in-out;
+}
+.navigation a:hover::before {
+  width: 100%;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: fixed;
+  top: 10vh;
+  right: -75%;
+  width: 75%;
+  height: 90vh;
+  padding: 4rem 1rem;
+  background-color: transparent;
+  z-index: 2;
+  overflow-y: auto;
+  transition: right 0.33s ease-in-out;
+}
+.dropdown-menu.active {
+  right: 0;
+}
+.dropdown-menu a {
+  font-size: 2rem;
+  text-align: center;
+  width: 50vw;
+  background-color: var(--sky-blue);
+  color: var(--light-slate);
+  padding: 3.5rem;
+  border-radius: 2rem;
+  transition: all 0.33s ease;
+}
+.dropdown-menu a:hover {
+  background-color: var(--dark-slate);
+  scale: 1.1;
+}
+
+/*--------- MAIN ---------*/
+
+main {
+  padding-top: 5vh;
+}
+
+/*--------- RESPONSIVE ---------*/
+
+@media (min-width: 640px) {
+  header {
+    justify-content: end;
+  }
+  .navigation {
+    display: block;
+  }
+  .dropdown-btn {
+    display: none;
+  }
+}
