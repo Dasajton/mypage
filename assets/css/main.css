@@ -41,6 +41,8 @@ body {
   display: none;
 }
 
+/*--------- FONTS ---------*/
+
 h1 {
   text-align: center;
   font-size: 4rem;
@@ -57,10 +59,6 @@ h2 {
 
 /* --------- HEADER --------- */
 
-.logo {
-  z-index: 10;
-}
-
 header {
   position: fixed;
   width: 100vw;
@@ -74,6 +72,9 @@ header {
   padding: 5rem;
   font-size: 2.2rem;
   z-index: 90;
+}
+.logo {
+  z-index: 10;
 }
 .navigation {
   display: none;
@@ -93,7 +94,7 @@ header {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: white;
+  background-color: #fff;
   transition: width 0.33s ease-in-out;
 }
 .navigation a:hover::before {
@@ -140,13 +141,13 @@ header {
   scale: 1.1;
 }
 
-/* --------- MAIN --------- */
+/*--------- MAIN ---------*/
 
 main {
   padding-top: 5vh;
 }
 
-/* RESPONSIVE */
+/*--------- RESPONSIVE ---------*/
 
 @media (min-width: 640px) {
   header {
