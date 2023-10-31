@@ -6,6 +6,7 @@ let menuOpen = false;
 const dropDownMenu = document.querySelector(".dropdown-menu");
 const burgerMenu = document.querySelector(".burgermenu");
 const closeMenu = document.querySelector(".closemenu");
+const overlay = document.getElementById("overlay");
 
 if (!menuOpen) {
   closeMenu.style.display = "none";
@@ -16,8 +17,10 @@ function toggleBurgerMenu() {
 
   if (menuOpen) {
     dropDownMenu.classList.add("active");
+    overlay.style.display = "block";
   } else {
     dropDownMenu.classList.remove("active");
+    overlay.style.display = "none";
   }
 
   if (menuOpen) {
