@@ -111,13 +111,15 @@ header {
 .dropdown-menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 4rem;
   position: fixed;
   top: 10vh;
-  right: -75%;
-  width: 75%;
+  right: -100%;
+  width: 100%;
   height: 90vh;
-  padding: 4rem 1rem;
+  padding: 7rem 2rem;
   background-color: transparent;
   z-index: 2;
   overflow-y: auto;
@@ -127,12 +129,12 @@ header {
   right: 0;
 }
 .dropdown-menu a {
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-align: center;
   width: 50vw;
   background-color: var(--sky-blue);
   color: var(--light-slate);
-  padding: 3.5rem;
+  padding: 4rem 0;
   border-radius: 2rem;
   transition: all 0.33s ease;
 }
