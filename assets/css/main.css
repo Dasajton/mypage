@@ -109,6 +109,11 @@ header {
   z-index: 10;
 }
 
+.burgermenu,
+.closemenu {
+  font-size: 5rem;
+}
+
 .dropdown-menu {
   display: flex;
   flex-direction: column;
