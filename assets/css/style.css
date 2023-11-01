@@ -142,7 +142,7 @@ header {
   height: 90vh;
   padding: 0 2rem;
   background-color: transparent;
-  z-index: 2;^
+  z-index: 2;
   overflow-y: auto;
   transition: right 0.33s ease-in-out;
 }
