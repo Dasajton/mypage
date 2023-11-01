@@ -102,6 +102,7 @@ header {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 2rem;
 }
 
 .dropdown-btn {
