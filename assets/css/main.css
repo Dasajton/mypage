@@ -14,10 +14,10 @@
   font-size: 62.5%;
 
   /* COLORS */
-  --dark-slate: #0f172a;
-  --gray-slate: #64748b;
-  --light-slate: #e2e8f0;
-  --sky-blue: #06b6d4;
+  --primary-color: rgb(249, 251, 252);
+  --secundary-color: rgb(15, 23, 42);
+  --light-sky-blue: rgb(33, 150, 243);
+  --dark-sky-blue: rgb(63, 81, 181);
 }
 
 body {
@@ -132,14 +132,14 @@ header {
   font-size: 2.4rem;
   text-align: center;
   width: 50vw;
-  background-color: var(--sky-blue);
+  background-color: var(--light-sky-blue);
   color: var(--light-slate);
   padding: 4rem 0;
   border-radius: 2rem;
   transition: all 0.33s ease;
 }
 .dropdown-menu a:hover {
-  background-color: rgb(25, 113, 156);
+  background-color: var(--dark-sky-blue);
   scale: 1.1;
 }
 
