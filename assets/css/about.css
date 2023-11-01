@@ -11,14 +11,15 @@ main {
   gap: 4rem;
 }
 .me-img-wrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .me-code-img {
-  height: auto;
   border-radius: 50%;
   transition: all 0.33s ease;
+  translate: 3rem 0;
 }
 .me-code-img:hover {
   scale: 1.1;
@@ -44,7 +45,7 @@ p {
   }
   p {
     padding-top: 3rem;
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 }
 @media all and (max-width: 871px) {
@@ -53,5 +54,13 @@ p {
   }
   p {
     font-size: 2.2rem;
+  }
+}
+@media all and (max-width: 690px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
   }
 }

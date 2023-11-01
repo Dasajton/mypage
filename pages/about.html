@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../assets/css/about.css" />
     <script src="../javascript/script.js" defer></script>
     <script src="../javascript/darkMode.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/b492017ec8.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
     <div id="overlay"></div>
@@ -26,25 +31,16 @@
         </ul>
       </nav>
       <button id="switch-color-theme" onClick="toggleDarkMode()">
-        <img
-          class="dark-mode-btn"
-          src="../assets/images/icons/dark-mode.svg"
-          alt=""
-        />
-        <img
-          class="light-mode-btn"
-          src="../assets/images/icons/light-mode.svg"
-          alt=""
-        />
+        <i class="dark-mode-btn fa-solid fa-moon" style="color: #2196f3"></i>
+        <i class="light-mode-btn fa-solid fa-sun" style="color: #2196f3"></i>
       </button>
 
       <button class="dropdown-btn" onClick="toggleBurgerMenu()">
-        <img
-          class="burgermenu"
-          src="../assets/images/icons/burger-menu.svg"
-          alt=""
-        />
-        <img class="closemenu" src="../assets/images/icons/close.svg" alt="" />
+        <i class="burgermenu fa-solid fa-bars" style="color: #2196f3"></i>
+        <i
+          class="closemenu fa-solid fa-circle-xmark"
+          style="color: #2196f3"
+        ></i>
       </button>
     </header>
 

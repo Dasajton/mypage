@@ -140,7 +140,7 @@ header {
   width: 50vw;
   background-color: var(--light-sky-blue);
   color: var(--light-slate);
-  padding: 4rem 0;
+  padding: 3rem 0;
   border-radius: 2rem;
   transition: all 0.33s ease;
 }
