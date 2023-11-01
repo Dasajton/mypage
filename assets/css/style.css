@@ -29,10 +29,8 @@
 /*--------- FONTS ---------*/
 
 h1 {
-  color: var(--dark-sky-blue);
-  /* padding-top: 15vh; */
+  color: var(--secundary-color);
   padding-bottom: 5vh;
-  text-align: center;
   font-size: 5rem;
 }
 h2 {
@@ -40,6 +38,11 @@ h2 {
   color: var(--dark-sky-blue);
   font-size: 3rem;
   padding: 0 5rem;
+}
+
+p {
+  color: var(--dark-sky-blue);
+  font-size: 3rem;
 }
 
 #overlay {

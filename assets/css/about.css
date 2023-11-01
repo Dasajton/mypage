@@ -2,14 +2,17 @@ main {
   padding-top: 20vh;
 }
 
-.container-about-info {
+.about-intro-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   gap: 5rem;
   padding: 2rem;
 }
-
 .me-code-img {
-  border-radius: 50%;
+  border-radius: 2rem;
+}
+h1 {
+  font-size: 8rem;
+  color: var(--light-sky-blue);
 }

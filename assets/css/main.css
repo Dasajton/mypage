@@ -45,6 +45,7 @@ body {
 
 h1 {
   text-align: center;
+  color: var(--primary-color);
   font-size: 4rem;
   padding: 5rem;
   padding-top: 5rem;
@@ -52,7 +53,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  color: var(--sky-blue);
+  color: var(--light-sky-blue);
   font-size: 3rem;
   padding: 0 5rem;
 }
@@ -85,7 +86,7 @@ header {
 }
 .navigation a {
   position: relative;
-  color: var(--sky-blue);
+  color: var(--light-sky-blue);
 }
 .navigation a::before {
   position: absolute;
@@ -94,7 +95,7 @@ header {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--primary-color);
   transition: width 0.33s ease-in-out;
 }
 .navigation a:hover::before {
