@@ -29,6 +29,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
 }
 
 #overlay {
@@ -154,6 +155,25 @@ header {
 main {
   padding-top: 5vh;
 }
+.contact-links {
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
+  font-size: 5rem;
+
+  display: flex;
+  gap: 3rem;
+}
+.fa-linkedin,
+.fa-square-github,
+.fa-envelope {
+  transition: all 0.33s ease-in-out;
+}
+.fa-linkedin:hover,
+.fa-square-github:hover,
+.fa-envelope:hover {
+  scale: 1.2;
+}
 
 /*--------- RESPONSIVE ---------*/
 
@@ -186,5 +206,11 @@ main {
   h2 {
     font-size: 6rem;
     text-align: start;
+  }
+}
+
+@media (max-width: 1048px) {
+  .contact-links {
+    display: none;
   }
 }
