@@ -48,7 +48,7 @@ h1 {
   color: var(--primary-color);
   font-size: 4rem;
   padding: 5rem;
-  padding-top: 5rem;
+  padding-top: 15vh;
   padding-bottom: 0;
 }
 h2 {
