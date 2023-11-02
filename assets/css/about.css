@@ -18,6 +18,7 @@ main {
   align-items: center;
 }
 .me-code-img {
+  width: 40rem;
   border-radius: 50%;
   transition: all 0.33s ease;
   translate: 3rem 0;
@@ -25,12 +26,17 @@ main {
 .me-code-img:hover {
   scale: 1.1;
 }
+.about-intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--light-sky-blue);
 }
 p {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 /* RESPONSIVE */
@@ -42,26 +48,16 @@ p {
     align-items: center;
   }
   .me-code-img {
-    width: 80%;
+    width: 90%;
+    transform: translateX(-1.5rem);
   }
-  p {
-    padding-top: 3rem;
-    font-size: 2.4rem;
-  }
-}
-@media all and (max-width: 871px) {
   h1 {
-    font-size: 4rem;
-  }
-  p {
-    font-size: 2.2rem;
+    text-align: center;
   }
 }
 @media all and (max-width: 690px) {
   h1 {
     font-size: 3rem;
-  }
-  p {
-    font-size: 2rem;
+    text-align: start;
   }
 }
