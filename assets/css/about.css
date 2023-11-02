@@ -8,7 +8,7 @@ main {
   width: 80vw;
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 5rem;
   margin-bottom: 5vh;
 }
 .me-img-wrapper {
